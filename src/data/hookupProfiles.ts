@@ -1,0 +1,190 @@
+export interface HookupProfile {
+  id: string;
+  name: string;
+  age: number;
+  gender: 'female' | 'male' | 'couple';
+  distanceKm: number;
+  city: string;
+  country: string;
+  photo: string;
+  gallery: string[];
+  intent: string;
+  availability: 'Tonight' | 'In 1-2 Hours' | 'This Weekend' | 'Right Now';
+  verified: boolean;
+  onlineStatus: 'Online Now' | 'Active 5m ago' | 'Active 12m ago';
+  bio: string;
+  interests: string[];
+  badges: string[];
+}
+
+export const HOOKUP_PROFILES: HookupProfile[] = [
+  {
+    id: 'hk-101',
+    name: 'Vanessa Rae',
+    age: 25,
+    gender: 'female',
+    distanceKm: 1.8,
+    city: 'Miami, FL',
+    country: 'United States',
+    photo: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=800&q=80',
+    gallery: [
+      'https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=800&q=80',
+      'https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=800&q=80',
+      'https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=800&q=80',
+    ],
+    intent: 'Late Night Drinks & Casual Fun',
+    availability: 'Tonight',
+    verified: true,
+    onlineStatus: 'Online Now',
+    bio: 'Just moved to downtown. Looking for someone spontaneous for cocktails and casual hangouts with no strings attached.',
+    interests: ['Cocktails', 'Rooftop Lounges', 'Spontaneous Roadtrips', 'House Music'],
+    badges: ['🔥 HOT MATCH', 'VERIFIED SELFIE', '98% RESPONSE'],
+  },
+  {
+    id: 'hk-102',
+    name: 'Chloe & Alex',
+    age: 26,
+    gender: 'couple',
+    distanceKm: 3.4,
+    city: 'Los Angeles, CA',
+    country: 'United States',
+    photo: 'https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=800&q=80',
+    gallery: [
+      'https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=800&q=80',
+      'https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?auto=format&fit=crop&w=800&q=80',
+    ],
+    intent: 'Open minded casual adventures',
+    availability: 'This Weekend',
+    verified: true,
+    onlineStatus: 'Online Now',
+    bio: 'Fun, discreet couple looking to meet respectful individuals for dinner dates and good vibes.',
+    interests: ['Wine Tasting', 'Beach Bonfires', 'Nightclubbing', 'Fine Dining'],
+    badges: ['DISCREET', 'VERIFIED DUO', 'FAST REPLIES'],
+  },
+  {
+    id: 'hk-103',
+    name: 'Elena Rostova',
+    age: 27,
+    gender: 'female',
+    distanceKm: 0.9,
+    city: 'London / Soho',
+    country: 'United Kingdom',
+    photo: 'https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=800&q=80',
+    gallery: [
+      'https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=800&q=80',
+      'https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=800&q=80',
+    ],
+    intent: 'Hotel Lounge / Secret Meetup',
+    availability: 'Right Now',
+    verified: true,
+    onlineStatus: 'Online Now',
+    bio: 'Traveling in town for 48 hours. Looking for someone upscale to show me the nightlife. Discretion 100% mutual.',
+    interests: ['Champagne', 'Luxury Travel', 'Jazz Bars', 'Secret Lounges'],
+    badges: ['⚡ 0.9 KM AWAY', 'PHOTO VERIFIED', 'VIP ONLY'],
+  },
+  {
+    id: 'hk-104',
+    name: 'Marcus Vance',
+    age: 29,
+    gender: 'male',
+    distanceKm: 2.5,
+    city: 'New York, NY',
+    country: 'United States',
+    photo: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=800&q=80',
+    gallery: [
+      'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=800&q=80',
+      'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=800&q=80',
+    ],
+    intent: 'Casual dating & gym partner with chemistry',
+    availability: 'Tonight',
+    verified: true,
+    onlineStatus: 'Active 5m ago',
+    bio: 'Finance guy who loves fitness, speakeasies, and chill nights in Manhattan. Let\'s grab a quick drink and see where it goes.',
+    interests: ['Fitness', 'Speakeasy Bars', 'Sushi', 'Late Drives'],
+    badges: ['MANHATTAN VIP', 'VERIFIED PROFILE'],
+  },
+  {
+    id: 'hk-105',
+    name: 'Camilla Duarte',
+    age: 24,
+    gender: 'female',
+    distanceKm: 4.1,
+    city: 'Las Vegas, NV',
+    country: 'United States',
+    photo: 'https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=800&q=80',
+    gallery: [
+      'https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=800&q=80',
+      'https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=800&q=80',
+    ],
+    intent: 'Vegas Strip Party & Hookup',
+    availability: 'In 1-2 Hours',
+    verified: true,
+    onlineStatus: 'Online Now',
+    bio: 'In Vegas for the weekend! Looking for someone fun to dance, hit the pool parties and make tonight unforgettable.',
+    interests: ['Pool Parties', 'EDM', 'Casinos', 'VIP Tables'],
+    badges: ['🔥 PARTY MATCH', 'INSTANT MEET', 'HIGH ENERGY'],
+  },
+  {
+    id: 'hk-106',
+    name: 'Sophie Dubois',
+    age: 28,
+    gender: 'female',
+    distanceKm: 1.2,
+    city: 'Paris / 8th Arr.',
+    country: 'France',
+    photo: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=800&q=80',
+    gallery: [
+      'https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=800&q=80',
+      'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=800&q=80',
+    ],
+    intent: 'Dinner, wine, & romantic rendezvous',
+    availability: 'Tonight',
+    verified: true,
+    onlineStatus: 'Active 12m ago',
+    bio: 'Art director living near Champs-Élysées. Prefer confident, stylish people who appreciate good wine and secret adventures.',
+    interests: ['Red Wine', 'Modern Art', 'Bistros', 'Night Walks'],
+    badges: ['PARISIAN CHIC', '100% DISCREET'],
+  },
+  {
+    id: 'hk-107',
+    name: 'Dominique Laurent',
+    age: 31,
+    gender: 'female',
+    distanceKm: 5.6,
+    city: 'Montreal / Downtown',
+    country: 'Canada',
+    photo: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=800&q=80',
+    gallery: [
+      'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=800&q=80',
+      'https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=800&q=80',
+    ],
+    intent: 'No strings attached casual dating',
+    availability: 'Tonight',
+    verified: true,
+    onlineStatus: 'Online Now',
+    bio: 'Busy tech consultant. Free tonight and looking to unwind with a good match. Zero expectations, maximum chemistry.',
+    interests: ['Tech', 'Espresso Martinis', 'Comedy Clubs', 'Late Dinners'],
+    badges: ['DIRECT & HONEST', 'NO STRINGS'],
+  },
+  {
+    id: 'hk-108',
+    name: 'Julian Sterling',
+    age: 30,
+    gender: 'male',
+    distanceKm: 3.8,
+    city: 'Berlin / Mitte',
+    country: 'Germany',
+    photo: 'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=800&q=80',
+    gallery: [
+      'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=800&q=80',
+      'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=800&q=80',
+    ],
+    intent: 'Techno nights & chill afterparty',
+    availability: 'This Weekend',
+    verified: true,
+    onlineStatus: 'Online Now',
+    bio: 'Music producer into underground clubs, photography, and late night conversation. Open to whatever sparks naturally.',
+    interests: ['Techno', 'Photography', 'Synthesizers', 'Afterparties'],
+    badges: ['BERLIN UNDERGROUND', 'CREATIVE'],
+  },
+];
