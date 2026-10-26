@@ -2380,7 +2380,7 @@ app.get('/api/football-matches', async (req: Request, res: Response) => {
     if (gemini) {
       try {
         const response = await gemini.models.generateContent({
-          model: 'gemini-3.6-flash',
+          model: 'gemini-2.5-flash',
           contents: `Generate ${count} active/scheduled football matches for today (${todayStr}) from active major leagues around the world (e.g., UEFA Champions League, English Premier League, Spanish La Liga, Italian Serie A, German Bundesliga, Saudi Pro League, French Ligue 1, or Copa Libertadores).
 For each match:
 - league: string
